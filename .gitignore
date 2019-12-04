@@ -1,0 +1,5 @@
+# IDE specific files
+.idea/
+
+# composer dependencies
+vendor/

@@ -1,0 +1,32 @@
+{
+    "name": "ricardoboss/laravel-roles-migrations",
+    "type": "library",
+    "description": "Write migrations for your laravel roles.",
+    "keywords": [
+        "laravel",
+        "roles",
+        "permissions",
+        "migrations"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.3",
+        "laravel/framework": "^6.6",
+        "jeremykenedy/laravel-roles": "^2.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ricardoboss\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
