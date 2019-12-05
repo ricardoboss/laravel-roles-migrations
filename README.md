@@ -148,6 +148,10 @@ coding style guide.
 
 If you see a missing feature you want or find a bug, please create an issue and describe it.
 
+## License
+
+The source code of this package is free software and distributed under the terms of the [MIT License](https://github.com/ricardoboss/laravel-roles-migrations/blob/master/LICENSE).
+
 ---
 
 Thanks to [jeremykenedy](https://github.com/jeremykenedy) for creating the
