@@ -44,7 +44,7 @@ Open the migration and replace the content with this (substitute the class name)
 ```php
 <?php
 
-use Ricardoboss\Database\Migrations\RolesMigration;
+use ricardoboss\Database\Migrations\RolesMigration;
 
 class MyNewRolesMigration extends RolesMigration
 {
