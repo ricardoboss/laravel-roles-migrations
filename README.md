@@ -144,6 +144,7 @@ coding style guide.
 - [x] Basic migrations and rollbacks
 - [ ] `artisan` commands
 - [ ] support for updating existing roles/permissions
+- [ ] write tests
 
 If you see a missing feature you want or find a bug, please create an issue and describe it.
 
