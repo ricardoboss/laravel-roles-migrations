@@ -163,7 +163,7 @@ class RolesMigrationMakeCommand extends Command
 	 */
 	protected function getStub()
 	{
-		$stub = __DIR__ . DIRECTORY_SEPARATOR . 'stubs' . DIRECTORY_SEPARATOR . 'roles_migration.stub';
+		$stub = __DIR__ . DIRECTORY_SEPARATOR;
 
 		return $this->files->get($stub);
 	}
