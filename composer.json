@@ -19,12 +19,12 @@
     },
     "autoload": {
         "psr-4": {
-            "ricardoboss\\": "src/"
+            "\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\": "tests/"
+            "ricardoboss\\Database\\Migrations\\Tests\\": "tests/"
         }
     },
     "minimum-stability": "dev",
