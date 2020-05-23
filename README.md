@@ -28,37 +28,15 @@ composer require ricardoboss/laravel-roles-migrations
 This package adds a new abstract class - `RolesMigration` - which you
 can use to write migrations for your roles.
 
-> Right now, the process of creating roles migrations requires many manual
-> steps. Dedicated commands are on the to-do list.
-
 To add a new migration, simply execute
 
 ```bash
-php artisan make:migration MyNewRolesMigration
+php artisan make:rolesmigration MyNewRolesMigration
 ```
 
 to add a new migration (which can be found in `database/migrations/xxx_xx_xx_xxxxxx_my_new_roles_migration.php`).
 
-Open the migration and replace the content with this (substitute the class name):
-
-```php
-<?php
-
-use ricardoboss\Database\Migrations\RolesMigration;
-
-class MyNewRolesMigration extends RolesMigration
-{
-    protected $permissions = [];
-
-    protected $roles = [];
-
-    protected $toAttach = [];
-
-    protected $toDetach = [];
-}
-
-```
-Notice how the migration class `extends` the new `RolesMigration` class instead
+Open the migration. Notice how the class `extends` the new `RolesMigration` class instead
 of the default `Migration` class from Laravel.
 
 Now comes the interesting part, writing the migrations.
@@ -142,7 +120,7 @@ coding style guide.
 ### To-Do List
 
 - [x] Basic migrations and rollbacks
-- [ ] `artisan` commands
+- [x] `artisan` commands
 - [ ] support for updating existing roles/permissions
 - [ ] write tests
 
