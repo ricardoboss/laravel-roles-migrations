@@ -12,6 +12,7 @@ use jeremykenedy\LaravelRoles\Models\Role;
  * Class RolesMigration
  *
  * @package ricardoboss\Database\Migrations
+ * @author Ricardo Boss <contact@ricardoboss.de>
  */
 abstract class RolesMigration extends Migration
 {
