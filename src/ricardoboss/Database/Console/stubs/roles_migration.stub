@@ -1,0 +1,45 @@
+<?php
+
+use ricardoboss\Database\Migrations\RolesMigration;
+
+class {{ class }} extends RolesMigration
+{
+    /**
+     * An array of permission definitions. A permission definition is an array which contains at least these keys:
+     *   - name: The name of the new permission
+     *   - description: A brief description of the permission
+     *
+     * Optionally, you can add the key 'slug' which is a url-safe key for the permission.
+     *
+     * @var string[][]
+     */
+    protected $permissions = [];
+
+    /**
+     * An array containing role definitions. A role definition is an array which contains at least these keys:
+     *   - name: (string) The name of the new role
+     *   - description: (string) A brief description of the role
+     *   - level: (int) The level of the role relative to the other roles
+     *
+     * Optionally, you can add the key 'slug' which is a url-safe key for the role.
+     *
+     * @var mixed[][]
+     */
+    protected $roles = [];
+
+    /**
+     * A key-value map that maps which permissions shall be attached to roles.
+     * The key is the role slug and the value is an array with permission slugs.
+     *
+     * @var string[][]
+     */
+    protected $toAttach = [];
+
+    /**
+     * A key-value map that maps which permissions shall be detached from roles.
+     * The key is the role slug and the value is an array with permission slugs.
+     *
+     * @var string[][]
+     */
+    protected $toDetach = [];
+}

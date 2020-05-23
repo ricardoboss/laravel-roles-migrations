@@ -27,6 +27,13 @@
             "ricardoboss\\Database\\Migrations\\Tests\\": "tests/"
         }
     },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ricardoboss\\Database\\RolesMigrationsServiceProvider"
+            ]
+        }
+    },
     "minimum-stability": "dev",
     "prefer-stable": true
 }
